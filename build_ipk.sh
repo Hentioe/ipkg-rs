@@ -18,4 +18,5 @@ cp "./target/$TARGET/release/$BIN" "$IPK_BUILD_DIR/usr/bin/" \
 && cp "$SCRIPTS/control" "$IPK_BUILD_DIR/CONTROL/control" \
 && sed -i "s/\$ARCH/$ARCH/g" "$IPK_BUILD_DIR/CONTROL/control"
 
+LANG=en_us_utf8 # Avoid date format issues
 "$IPKG_BUILD_TOOL" "$IPK_BUILD_DIR"
