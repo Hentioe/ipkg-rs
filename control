@@ -1,0 +1,8 @@
+Package: demopkg
+Version: 0.1.0
+Architecture: $ARCH
+Maintainer: Hentioe <me@bluerain.io>
+Section: admin
+Priority: optional
+Source: https://www.github.com/Hentioe/ipkg-rs
+Description: Simple Rust project build ipk solution.
