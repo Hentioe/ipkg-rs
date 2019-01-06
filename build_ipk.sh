@@ -7,6 +7,7 @@ IPKG_BUILD_TOOL="$OPENWRT_SDK_HOME/scripts/ipkg-build"
 IPK_BUILD_DIR=./build-ipk
 SCRIPTS=./ipkg-rs
 
+STAGING_DIR="$OPENWRT_SDK_HOME/staging_dir" \
 "$SCRIPTS/cargo_target_$TARGET.sh"
 
 rm -fr "$IPK_BUILD_DIR" \
